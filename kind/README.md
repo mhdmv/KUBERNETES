@@ -1,4 +1,6 @@
-Install kind on linux:
+## Install kind on linux:
+
+```
 
 #!/bin/bash
 
@@ -12,11 +14,13 @@ sudo mv ./kubectl /usr/local/bin/kubectl
 
 echo "kind & kubectl Successfully Installed!"
 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+```
 
-Multi-node clusters
+## Multi-node clusters
+
 You can also have a cluster with multiple control-plane & worker nodes, create a config file.
 
+```
 
 kind: Cluster
 apiVersion: kind.x-k8s.io/v1alpha4
@@ -33,3 +37,8 @@ nodes:
   - containerPort: 80
     hostPort: 80
     protocol: tcp
+
+```
+
+
+![Screenshot 2025-01-28 155902](https://github.com/user-attachments/assets/addf89a1-9316-4781-8178-1f3942eb87d9)
